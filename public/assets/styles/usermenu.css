@@ -1,0 +1,22 @@
+.user_menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #f2f4ff; */
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 15px;
+    border: 1px solid var(--projectPurple);
+
+    position: fixed;
+    right: -100%;
+    top: 80px;
+}
+
+.user_menu.active {
+    position: fixed;
+    right: 8px;
+    top: 80px;
+    transition: ease;
+    /* transition: 0.1s; */
+}

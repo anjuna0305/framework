@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --projectGreen: #98C03C;
+    --projectPurple: #7681BF;
+}
+
+a {
+    text-decoration: none;
+    color: var(--projectPurple);
+}
+
+a:hover {
+    color: #4c62e0;
+    cursor: pointer;
+}
+
+.purpleText {
+    color: var(--projectPurple);
+}
+
+.heading {
+    margin-top: 150px;
+    margin-bottom: 25px;
+}
+
+.resultMessager {
+    margin-top: 150px;
+    padding-left: 25px;
+}
+
+.event_heading {
+    margin-top: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+}

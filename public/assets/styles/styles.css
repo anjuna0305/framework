@@ -1,0 +1,163 @@
+@import "autoload.css";
+
+.mainSection {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 95vh;
+    /* width: 95vw; */
+}
+
+.imageHolder {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.formHolder {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/Photos/background\ 3.png);
+    background-size: cover;
+}
+
+.form {
+    width: 440px;
+    height: 540px;
+    border-radius: 30px;
+    background-color: #F2F3F9;
+    padding-top: 50px;
+
+}
+
+.formItemDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginButton {
+    margin-top: 50px;
+}
+
+#signupButton {
+    margin-top: 25px;
+}
+
+#ForgottonPassword {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* .areaCoordinatorSec {
+    display: flex;
+    justify-content: space-evenly; */
+/* } */
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row_space_between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.areaCoos {
+    width: 360px;
+    height: 160px;
+    margin: 20px 30px 0px 0px;
+    background-color: white;
+
+    border: 2px solid var(--projectPurple);
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#areaCoosButtonArea {
+    display: flex;
+    float: right;
+}
+
+#areaCoosItems,
+#deleteList,
+#viewList {
+    font-size: 12px;
+}
+
+#viewList {
+    width: 80px;
+    height: 30px;
+}
+
+#viewLis:hover {
+    border-width: 2px;
+}
+
+#deleteList {
+    margin-right: 5px;
+}
+
+#addButtonDiv {
+    padding-right: 20px;
+    display: flex;
+    float: right;
+}
+
+#addButton {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#addCoordinators {
+    display: flex;
+    border: 2px solid var(--projectPurple);
+    border-radius: 25px;
+    width: 450px;
+    height: 650px;
+
+}
+
+#coordinatorsSec {
+    padding-top: 100px;
+}
+
+#addCoordinatorSec {
+    padding-top: 150px;
+}
+
+#addCoordinatorSec h3 {
+    margin-bottom: 20px;
+}
+
+.ongoing_events_sec {
+    border: 2px solid var(--projectPurple);
+    padding: 5px 5px 50px 5px;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+.completed_events_sec {
+    border: 2px solid var(--projectPurple);
+    padding: 5px 5px 25px 5px;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+/* event butget */
+.event_budget_holder {
+    width: 860px;
+    height: 900px;
+    /* background-color: red; */
+    background-image: url("/Photos/ArrowLog.png");
+    background-size: contain;
+    border: 2px solid var(--projectPurple);
+}

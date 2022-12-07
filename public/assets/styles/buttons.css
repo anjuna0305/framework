@@ -1,0 +1,125 @@
+.purpleButton {
+    width: 340px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--projectPurple);
+    font-weight: 600;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border: 3px solid var(--projectPurple);
+}
+
+.purpleButton:hover {
+    color: var(--projectPurple);
+    background-color: white;
+    border: 3px solid var(--projectPurple);
+}
+
+.greenButton {
+    width: 340px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--projectGreen);
+    font-weight: 600;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border: 3px solid var(--projectGreen);
+}
+
+.greenButton:hover {
+    color: var(--projectGreen);
+    background-color: white;
+    border: 3px solid var(--projectGreen);
+}
+
+.linkButtonPurple {
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--projectPurple);
+    font-size: 24px;
+    border: none;
+}
+
+.linkButtonPurple:hover {
+    text-decoration: underline;
+}
+
+.table_button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    animation: none;
+}
+
+.table_button:hover {
+    animation: none;
+    /* background-color: #F3F5FF; */
+    cursor: pointer;
+    border: 1px solid var(--projectPurple);
+}
+
+.table_button img {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+.search_button_purple,
+.search_button_green {
+    height: 45px;
+    width: 60px;
+    padding: 0;
+
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.search_button_purple:hover {
+    background: #7681bfc2;
+    border: 0;
+}
+
+.search_button_green:hover {
+    background: #98c03cc7;
+    border: 0;
+}
+
+.search_button_green img,
+.search_button_purple img {
+    width: 30px;
+}
+
+/* .user_menu_button {
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    width: 300px;
+    height: 30px;
+    padding: 100%;
+    /* background-color: #d9dfff; */
+/* background-color: #f2f4ff; */
+/* text-align: center; */
+/* } */
+
+.user_menu_button {
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #d9dfff;
+    font-weight: 400;
+    color: var(--projectPurple);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.user_menu_button:hover {
+    border: 1px solid var(--projectPurple);
+    background-color: white;
+}

@@ -1,0 +1,112 @@
+.event_item {
+    width: 280px;
+    height: 400px;
+    background-color: rgba(118, 129, 191, 0.1);
+    border-radius: 25px;
+    outline: 2px solid var(--projectPurple);
+    margin: 18px;
+}
+
+.event_image {
+    width: 280px;
+    height: 230px;
+    border-radius: 25px;
+
+    background-color: white;
+    border-bottom: 0.5px solid var(--projectPurple);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event_image img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+.progress_bar {
+    width: 280px;
+    height: 50px;
+    /* border: 1px solid black; */
+    /* background-color: white; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.progress_bar img {
+    width: 25px;
+}
+
+.event_button_holder {
+    width: 280px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.event_button {
+    width: 140px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+}
+
+.pogress_div {
+    width: 230px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progreess_fill {
+    width: 80%;
+    height: 10px;
+    background-color: var(--projectGreen);
+}
+
+.progress_bar_titles {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress_bar_titles div {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.progress_bar_titles img {
+    transform: translateY(-3px);
+}
+
+.fill_percentage_text {
+    font-size: 10px;
+    padding-left: 8px;
+}
+
+
+/* completed event item */
+.event_item_completed {
+    width: 280px;
+    height: 370px;
+    background-color: rgba(118, 129, 191, 0.1);
+    border-radius: 25px;
+    outline: 2px solid var(--projectPurple);
+    margin: 18px;
+}
+
+.event_button_holder_completed {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

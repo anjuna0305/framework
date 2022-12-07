@@ -1,0 +1,41 @@
+.inputField {
+    height: 45px;
+    width: 400px;
+    margin: 10px;
+    border: solid;
+    border-color: var(--projectPurple);
+    border-width: 2px;
+    border-radius: 30px;
+
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+.inputFieldHalfs {
+    height: 45px;
+    width: 190px;
+    margin: 10px;
+    border: solid;
+    border-color: var(--projectPurple);
+    border-width: 2px;
+    border-radius: 30px;
+
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+.loginField {
+    height: 55px;
+    width: 360px;
+
+    font-size: 16px;
+    padding-right: 15px;
+}
+
+.searchField {
+    width: 700px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: 0px;
+    margin: 0px;
+}
