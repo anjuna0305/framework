@@ -1,6 +1,7 @@
 /*fonts*/
 @import "autoload.css";
 
+@import "navbar.css";
 @import "buttons.css";
 @import "textFields.css";
 @import "globals.css";
