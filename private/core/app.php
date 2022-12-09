@@ -40,7 +40,7 @@ class App
 	private function getURL()
 	{
 		$url = isset($_GET['url']) ? $_GET['url'] : "home";
-		return explode("/",filter_var(trim($url,"/")),FILTER_SANITIZE_URL);
+        return explode("/",filter_var(trim($url,"/")),FILTER_SANITIZE_URL);
 	}
 
 }

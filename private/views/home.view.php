@@ -13,6 +13,12 @@
         </div>
     </div>
 
+    <?php
+        echo "<pre>";
+        print_r($rows);
+
+    ?>
+
 <!-- include footer -->
 <?php $this->view('includes/footer')?>
 

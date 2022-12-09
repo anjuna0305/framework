@@ -5,10 +5,13 @@
 class Home extends Controller
 {
 	
-	function index($id=100)
+	function index()
 	{
 		// code...
-		$this->view('home');
+		$db = new Database();
+
+		$data = $db->query("select * from areacoordinators");
+		$this->view('home',['rows'=>$data]);
 
 	}
 }
