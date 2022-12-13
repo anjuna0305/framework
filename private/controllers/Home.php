@@ -8,9 +8,13 @@ class Home extends Controller
 	function index()
 	{
 		// code...
-		$db = new Database();
+		$user = new user;
+		// $data=$user->find_all();
 
-		$data = $db->query("select * from areacoordinators");
+		$data = $user->where('firstName','chamathka');
+		
+
+
 		$this->view('home',['rows'=>$data]);
 
 	}

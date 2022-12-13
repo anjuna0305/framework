@@ -9,8 +9,8 @@ class Database
 	private function connect()
 	{
 		// code...
-		$string = "mysql:host=localhost;dbname=login_sample_db";
-		if(!$con = new PDO($string,'root',''))
+		$string = DBDRIV.":host=".DBHOST.";dbname=".DBNAME;
+		if(!$con = new PDO($string,DBUSER,DBPASS))
 		{
 			die("could not connect to database");
 		}
