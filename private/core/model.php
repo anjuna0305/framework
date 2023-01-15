@@ -5,20 +5,19 @@
  */
 class Model extends Database
 {
-		function __construct()
+	function __construct()
 	{
 		// code...
-		if(!property_exists($this, 'table')){
-			$this->table = strtolower($this::class);//returns current instance' name
+		if (!property_exists($this, 'table')) {
+			$this->table = strtolower($this::class); //returns current instance' name
 		}
 	}
 
-	public function where($column,$value)
+	public function where($column, $value)
 	{
-		// $column=addslashes($column);
-		$query = "select * from $this->table where " .$column. "= '".$value."'";
-		echo "$query";
-		return $this->query($query);
+		$column = addsLashes($column);
+		$query = "select * from $this->table where $column = :value";
+		return $this->query($query, [':value' => $value]);
 	}
 
 	public function find_all()
@@ -27,27 +26,28 @@ class Model extends Database
 		return $this->query($query);
 	}
 
-	public function insert($column,$value)
+	public function insert($data)
+	{
+		$keys = array_keys($data);
+		$columns = implode(',', $keys);
+		$values = implode(',:', $keys);
+
+		$query = "insert into $this->table ($columns) values (:$values)";
+
+		return $this->query($query, $data);
+	}
+
+	public function update($id, $data)
 	{
 		// $column=addslashes($column);
-		$query = "select * from $this->table where " .$column. "= '".$value."'";
-		echo "$query";
+		$query = "select * from $this->table where " . $column . "= '" . $value . "'";
 		return $this->query($query);
 	}
 
-	public function update($id,$data)
+	public function delete($id)
 	{
-		// $column=addslashes($column);
-		$query = "select * from $this->table where " .$column. "= '".$value."'";
-		echo "$query";
-		return $this->query($query);
-	}
-
-	public function delete($column,$value)
-	{
-		// $column=addslashes($column);
-		$query = "select * from $this->table where " .$column. "= '".$value."'";
-		echo "$query";
-		return $this->query($query);
+		$query = "delete from $this->table where id = :id";
+		$data['id'] = $id;
+		return $this->query($query, $data);
 	}
 }
