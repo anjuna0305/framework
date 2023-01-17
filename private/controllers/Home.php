@@ -11,21 +11,19 @@ class Home extends Controller
 		// code...
 		$user = new user;
 		// $data=$user->find_all();
-		$arr['firstName'] = 'chamathka';
-		$arr['lastName'] = 'sukumali';
+		$arr['firstName'] = 'pomna';
+		$arr['lastName'] = 'pamkaya';
 		$arr['userIndex'] = 5566222;
-		$arr['email'] = 'siri@gmail.com';
-		$arr['nic'] = 112233655;
-		$arr['contact'] = '785566998';
-		$arr['district'] = 453132;
-		$arr['town'] = '13132';
-		$arr['password'] = 'kkpp';
+		// $arr['email'] = 'siri@gmail.com';
+		// $arr['nic'] = 112233655;
+		// $arr['contact'] = '785566998';
+		// $arr['district'] = 453132;
+		// $arr['town'] = '13132';
+		// $arr['password'] = 'kkpp';
 
-		// $data = $user->where('firstName', 'chamathka');
-		$data = $user->insert($arr);
-		$data2 = $user->where('firstName', 'chamathka');
-		$user->delete(13132);
+		// $this->view('home', ['rows' => $data]);
+		$user->delete(780934714618081138);
+		$data = $user->find_all();
 		$this->view('home', ['rows' => $data]);
-		print_r($data2);
 	}
 }

@@ -5,7 +5,9 @@
  */
 class Model extends Database
 {
-	function __construct()
+	public $errors = array();
+
+	public function __construct()
 	{
 		// code...
 		if (!property_exists($this, 'table')) {
@@ -39,9 +41,18 @@ class Model extends Database
 
 	public function update($id, $data)
 	{
-		// $column=addslashes($column);
-		$query = "select * from $this->table where " . $column . "= '" . $value . "'";
-		return $this->query($query);
+		$str = "";
+		foreach ($data as $key => $value) {
+			$str .= $key . '=:' . $key . ',';
+		}
+
+		$str = trim($str, ",");
+		echo $str;
+
+		$data['id'] = $id;
+
+		$query = "update $this->table set $str where id = :id";
+		return $this->query($query, $data);
 	}
 
 	public function delete($id)
